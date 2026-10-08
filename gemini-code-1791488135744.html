@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place Studio - Legal, Términos y Privacidad</title>
+    <style>
+        :root {
+            --bg-color: #0b0b0e;
+            --panel-bg: #121217;
+            --accent-color: #ED4245;
+            --text-main: #dcddde;
+            --text-muted: #8e9297;
+            --border-color: #202225;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            background: #202225;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-links a:hover {
+            background: var(--accent-color);
+            color: #fff;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        h3 {
+            color: #e1e1e1;
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background: rgba(237, 66, 69, 0.1);
+            border-left: 3px solid var(--accent-color);
+            padding: 15px 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .grid-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .feature-card {
+            background: #18191c;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .feature-card h4 {
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Coffee Place Studio</h1>
+            <div class="nav-links">
+                <a href="#acerca">Acerca del Proyecto</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#terminos">Términos de Servicio</a>
+                <a href="#privacidad">Política de Privacidad</a>
+                <a href="#soporte">Soporte y Contacto</a>
+            </div>
+        </header>
+
+        <section id="acerca">
+            <h2>Acerca de Coffee Place Studio</h2>
+            <p><strong>Coffee Place Studio</strong> es un proyecto enfocado en crear herramientas prácticas, moderación y seguridad automatizada para servidores de Discord.</p>
+            <p>El bot está diseñado para facilitar la administración diaria, ayudando a mantener los servidores organizados y seguros para todos los miembros.</p>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características Principales</h2>
+            <p>El bot implementa sistemas diseñados específicamente para mantener las comunidades ordenadas y protegidas:</p>
+            <div class="grid-features">
+                <div class="feature-card">
+                    <h4>Logs Separados</h4>
+                    <p>Canales de registro independientes para moderación, miembros, entradas, salidas y cambios de perfil en tiempo real.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Ayuda Paginada</h4>
+                    <p>Un comando de ayuda organizado y fácil de navegar mediante botones interactivos.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Sistema de Sanciones</h4>
+                    <p>Acumulación de advertencias con lógica de expulsión automática al llegar al límite establecido y avisos por mensaje directo.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Anti-Raid Estricto</h4>
+                    <p>Protección contra bots no autorizados o ingresos masivos sospechosos para cuidar el servidor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="terminos">
+            <h2>Condiciones del Servicio</h2>
+            <p>Al invitar, configurar o utilizar Coffee Place Studio en cualquier servidor de Discord, aceptas las siguientes Condiciones del Servicio. Si no estás de acuerdo con alguna de estas reglas, debes abstenerte de utilizar el bot y expulsarlo de tu servidor.</p>
+
+            <h3>1. Uso del Servicio</h3>
+            <p>Coffee Place Studio se proporciona tal cual es. Los creadores se reservan el derecho de modificar, actualizar o suspender funciones o comandos del bot cuando sea necesario.</p>
+
+            <h3>2. Normas de Comportamiento</h3>
+            <p>Queda prohibido:</p>
+            <ul>
+                <li>Intentar vulnerar, dañar o alterar el código o los sistemas del bot.</li>
+                <li>Utilizar las herramientas de automatización o moderación para hostigar o realizar acciones maliciosas contra otros usuarios o servidores.</li>
+                <li>Aprovecharse de errores o fallos para saltarse las restricciones del bot.</li>
+            </ul>
+
+            <h3>3. Limitación de Responsabilidad</h3>
+            <p>Los creadores de Coffee Place Studio no se hacen responsables por:</p>
+            <ul>
+                <li>Pérdidas de datos o fallos derivados de una mala configuración de permisos por parte del staff del servidor.</li>
+                <li>Sanciones o baneos aplicados por moderadores humanos que usen mal los comandos del bot.</li>
+                <li>Caídas temporales del servicio debido a mantenimientos en la nube.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Nota:</strong> Los administradores de cada servidor son los únicos responsables de supervisar las sanciones y el uso del bot en su comunidad.
+            </div>
+        </section>
+
+        <section id="privacidad">
+            <h2>Política de Privacidad</h2>
+            <p>En <strong>Coffee Place Studio</strong> respetamos la privacidad de los usuarios de Discord. Esta sección explica qué información se maneja al usar el bot.</p>
+
+            <h3>1. Datos que se Recopilan</h3>
+            <p>Para que el bot pueda funcionar correctamente, procesa únicamente los siguientes datos dentro de Discord:</p>
+            <ul>
+                <li><strong>IDs Únicos:</strong> IDs de usuarios, servidores, canales y roles necesarios para ejecutar comandos y verificar permisos.</li>
+                <li><strong>Registros de Logs:</strong> Información sobre sanciones, razones, cambios de apodo o nombre de usuario, y entradas/salidas enviadas a los canales de registro configurados.</li>
+                <li><strong>Interacciones:</strong> Comandos ejecutados para hacer funcionar los menús interactivos.</li>
+            </ul>
+
+            <h3>2. Datos que NO Recopilamos</h3>
+            <p>Coffee Place Studio <strong>no recopila ni lee</strong>:</p>
+            <ul>
+                <li>Contenido de chats generales o mensajes privados (DMs).</li>
+                <li>Información personal del mundo real (nombres reales, correos, contraseñas o ubicación).</li>
+            </ul>
+
+            <h3>3. Almacenamiento</h3>
+            <p>Los datos operativos se manejan de manera segura y no se comparten con terceros. Los registros enviados a los canales de logs están bajo el control absoluto de los administradores del servidor.</p>
+        </section>
+
+        <section id="soporte">
+            <h2>Soporte y Contacto</h2>
+            <p>Si tienes dudas, encuentras algún error o necesitas ayuda con el bot, puedes unirte a nuestro servidor de Discord oficial para recibir asistencia de la comunidad.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Coffee Place Studio. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

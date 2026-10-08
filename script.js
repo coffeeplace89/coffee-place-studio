@@ -1,0 +1,1 @@
+console.log("Coffee Place Studio web cargada correctamente.");
